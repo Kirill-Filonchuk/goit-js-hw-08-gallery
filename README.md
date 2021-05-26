@@ -69,3 +69,10 @@
 - Закрытие модального окна по нажатию клавиши `ESC`.
 - Пролистывание изображений галереи в открытом модальном окне клавишами "влево"
   и "вправо".
+
+function pastModalAtribut(target) {
+    // console.dir(target)
+    refs.boxImg.src=target.dataset.source;
+    refs.boxImg.alt=target.alt
+    // console.dir(refs.boxImg)
+}
